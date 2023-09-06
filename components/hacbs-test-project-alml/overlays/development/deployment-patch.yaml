@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-alml
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh-gitops-bot/rhtap-demo-auln-tenant/rhtap-demo-app/hacbs-test-project-alml@sha256:f1d432eaae31d17121e5e7c80fdcb57653e29bad09eddb1e068ecdcc3be245d4
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
